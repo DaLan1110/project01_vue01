@@ -50,7 +50,7 @@ watch(
           </div>
           <div class="svg-content01-middle mt-5 ms-5 position-relative">
             <div class="vertical-line"></div>
-            <div class="row ms-5 ms-sm-2 svg-content01-col8">
+            <div class="row ms-2 ms-sm-5 svg-content01-col8">
               <p class="svg-content01-col8-text">Get connected</p>
               <h2 class="svg-content01-col8-text">全球代理與台灣加盟專線</h2>
               <h2 class="svg-content01-col8-text">0800-000-000</h2>
