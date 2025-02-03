@@ -2,16 +2,11 @@
 import { ref, onMounted, onBeforeUnmount } from "vue";
 
 const isSmallScreen = ref(window.innerWidth < 990);
-const iconSize = ref("5x");
+const iconSize = ref("4x");
 
 const updateScreenSize = () => {
-  if (window.innerWidth < 768) {
-    iconSize.value = "3x";
-  } else if (window.innerWidth < 990) {
-    iconSize.value = "4x";
-  } else {
-    iconSize.value = "5x";
-  }
+  isSmallScreen.value = window.innerWidth < 768;
+  iconSize.value = isSmallScreen.value ? "3x" : "4x";
 };
 
 onMounted(() => {
@@ -179,11 +174,11 @@ onBeforeUnmount(() => {
   .advantageTitle {
     font-size: 23px;
   }
-
-  .advantageContent {
+  
+  .advantageContent{
     display: none;
   }
-
+  
   .articleLength_advantage {
     height: 45vh;
   }
