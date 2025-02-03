@@ -206,6 +206,15 @@ watch(
   height: 20vh; /* 滿屏高度，視需求調整 */
 }
 
+@media (max-width: 850px) {
+  .svg-content01-col1-text {
+    font-size: 23px;
+  }
+  .svg-content01-col8-text {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 710px) {
   .svg-content01-col1-text {
     font-size: 23px;
