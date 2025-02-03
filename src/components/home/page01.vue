@@ -5,8 +5,13 @@ const isSmallScreen = ref(window.innerWidth < 990);
 const iconSize = ref("5x");
 
 const updateScreenSize = () => {
-  isSmallScreen.value = window.innerWidth < 990;
-  iconSize.value = isSmallScreen.value ? "4x" : "5x";
+  if (window.innerWidth < 768) {
+    iconSize.value = "3x";
+  } else if (window.innerWidth < 990) {
+    iconSize.value = "4x";
+  } else {
+    iconSize.value = "5x";
+  }
 };
 
 onMounted(() => {
@@ -174,11 +179,11 @@ onBeforeUnmount(() => {
   .advantageTitle {
     font-size: 23px;
   }
-  
-  .advantageContent{
+
+  .advantageContent {
     display: none;
   }
-  
+
   .articleLength_advantage {
     height: 45vh;
   }
