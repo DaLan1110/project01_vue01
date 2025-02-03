@@ -211,7 +211,7 @@ watch(
     font-size: 23px;
   }
   .svg-content01-col8-text {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 
@@ -220,7 +220,7 @@ watch(
     font-size: 23px;
   }
   .svg-content01-col8-text {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -228,9 +228,9 @@ watch(
   .svg-content01-col1-text {
     font-size: 23px;
   }
-  .svg-content01-col8-text {
+  /* .svg-content01-col8-text {
     font-size: 19px;
-  }
+  } */
 }
 
 @media (max-width: 665px) {
