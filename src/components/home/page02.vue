@@ -87,7 +87,7 @@ onBeforeUnmount(() => {
             </RouterLink>
             <RouterLink to="#4" class="diverse-img">
               <img
-                src="../../assets/img/homeWave01/drink002.jpg"
+                src="../../assets/img/homeWave01/drink015.jpg"
                 alt=""
                 class="diverse01 diverse-position-img04 diverse-img02to768"
                 :style="imageStyle1"
