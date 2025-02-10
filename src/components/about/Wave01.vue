@@ -209,9 +209,9 @@
 }
 
 @media (max-width: 768px) {
-  .about-timeline {
+  /* .about-timeline {
     margin-bottom: 150px;
-  }
+  } */
 }
 
 @media (max-width: 300px) {
