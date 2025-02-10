@@ -148,7 +148,7 @@ onBeforeUnmount(() => {
   .articleLength_advantage {
     height: 65vh;
     margin-top: -70px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
 }
 
