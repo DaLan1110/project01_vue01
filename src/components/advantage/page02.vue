@@ -38,7 +38,7 @@ window.addEventListener("mousemove", handleMouseMove);
 
       <div class="signature-row mt-5">
         <img
-          src="../../assets/img/homeWave01/drink001.jpg"
+          src="../../assets/img/homeWave01/drink022.jpg"
           alt=""
           class="img-size02 signature01-position"
           :style="imageStyleSignature01"
@@ -50,7 +50,7 @@ window.addEventListener("mousemove", handleMouseMove);
           :style="imageStyleSignature02"
         />
         <img
-          src="../../assets/img/homeWave01/drink001.jpg"
+          src="../../assets/img/homeWave01/drink023.jpg"
           alt=""
           class="img-size02 signature03-position"
           :style="imageStyleSignature03"
