@@ -205,7 +205,7 @@ onBeforeUnmount(() => {
   .positionDrink01-about {
     width: 280px;
     top: 0px;
-    left: 0px;
+    left: -60px;
   }
 
   .positionDrink02-about {
