@@ -192,7 +192,7 @@ onBeforeUnmount(() => {
   }
 
   .home-title-h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .positionDrink01-home {

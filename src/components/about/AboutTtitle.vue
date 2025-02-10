@@ -99,6 +99,11 @@ onBeforeUnmount(() => {
 
 .about-title-h1 {
   font-size: 35px;
+  white-space: nowrap;
+}
+
+.about-title-h1{
+  white-space: nowrap;
 }
 
 @media (max-width: 1400px) {
