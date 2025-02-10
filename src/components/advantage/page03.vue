@@ -44,7 +44,7 @@ window.addEventListener("mousemove", handleMouseMove);
           :style="imageStyleWarm03"
         />
         <img
-          src="../../assets/img/homeWave01/drink006.jpg"
+          src="../../assets/img/homeWave01/drink024.jpg"
           alt=""
           class="img-warm-size warm02-position"
           :style="imageStyleWarm02"
