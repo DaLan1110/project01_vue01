@@ -93,6 +93,15 @@
 
 .advantage-title-h1 {
   font-size: 35px;
+  white-space: nowrap;
+}
+
+.advantage-title-h2 {
+  white-space: nowrap;
+}
+
+.advantage-title-h3 {
+  white-space: nowrap;
 }
 
 @keyframes img-circle01 {
@@ -280,7 +289,7 @@
     font-size: 25px !important;
   }
 
-  .advantage-title-h3{
+  .advantage-title-h3 {
     font-size: 18px !important;
   }
 }

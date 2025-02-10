@@ -115,6 +115,11 @@
 
 .menu-title-h1 {
   font-size: 35px;
+  white-space: nowrap;
+}
+
+.menu-title-h2 {
+  white-space: nowrap;
 }
 
 @keyframes water-drop-branch-shake01 {

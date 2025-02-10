@@ -110,6 +110,11 @@
 
 .advantage-title-h1 {
   font-size: 35px;
+  white-space: nowrap;
+}
+
+.advantage-title-h2 {
+  white-space: nowrap;
 }
 
 @keyframes img-circle01 {
