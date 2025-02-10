@@ -266,6 +266,7 @@ onBeforeUnmount(() => {
 
   .articleLength-diverseProdeucts {
     height: 170vh;
+    margin-bottom: 0;
   }
 }
 
