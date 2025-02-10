@@ -128,7 +128,7 @@ onBeforeUnmount(() => {
           <div class="row diverse-position-image002">
             <RouterLink to="#7" class="diverse-img">
               <img
-                src="../../assets/img/homeWave01/drink001.jpg"
+                src="../../assets/img/homeWave01/drink018.jpg"
                 alt=""
                 class="diverse01 diverse-position-img01 diverse-img01to768"
                 :style="imageStyle2"
@@ -136,7 +136,7 @@ onBeforeUnmount(() => {
             </RouterLink>
             <RouterLink to="#8" class="diverse-img">
               <img
-                src="../../assets/img/homeWave01/drink002.jpg"
+                src="../../assets/img/homeWave01/drink019.jpg"
                 alt=""
                 class="diverse01 diverse-position-img02 diverse-img02to768"
                 :style="imageStyle1"
