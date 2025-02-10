@@ -27,7 +27,7 @@
     <div class="col-6 advantage-titletext">
       <h2 class="advantage-title-h2">Mixed Species</h2>
       <h1 class="advantage-title-h1">夏季獨創混種加盟</h1>
-      <h3>多元產品 四季熱賣</h3>
+      <h3 class="advantage-title-h3">多元產品 四季熱賣</h3>
     </div>
   </div>
 </template>
@@ -278,6 +278,10 @@
 
   .advantage-title-h1 {
     font-size: 25px !important;
+  }
+
+  .advantage-title-h3{
+    font-size: 18px !important;
   }
 }
 </style>
