@@ -121,6 +121,11 @@ onBeforeUnmount(() => {
 
 .home-title-h1 {
   font-size: 35px;
+  white-space: nowrap;
+}
+
+.home-title-h2 {
+  white-space: nowrap;
 }
 
 @media (max-width: 1200px) {
