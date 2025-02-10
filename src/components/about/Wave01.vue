@@ -208,12 +208,6 @@
   box-shadow: 0px 0px 10px 2px rgb(182, 182, 182);
 }
 
-@media (max-width: 768px) {
-  /* .about-timeline {
-    margin-bottom: 150px;
-  } */
-}
-
 @media (max-width: 300px) {
   .timeline {
     width: 100%;
