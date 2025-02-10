@@ -190,7 +190,7 @@ onBeforeUnmount(() => {
       <div class="container-fluid">
         <RouterLink
           to="/"
-          class="navbar-brand fontTitle ms-0 ms-md-5"
+          class="navbar-brand fontTitle ms-0 ms-lg-5"
           active-class="active"
           >夏季</RouterLink
         >
@@ -206,7 +206,7 @@ onBeforeUnmount(() => {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-0 ms-lg-5">
             <li class="nav-item">
               <RouterLink
                 to="/about"
