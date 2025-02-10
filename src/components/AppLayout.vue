@@ -24,7 +24,8 @@ const memberName = ref("");
 const memberAvatar = ref("");
 const memberPersonalData = ref("");
 const memberId = ref("");
-const baseAvatarUrl = "https://project01-back-end.onrender.com/img/member/member/";
+const baseAvatarUrl =
+  "https://project01-back-end.onrender.com/img/member/member/";
 
 const checkLocalStorage = () => {
   const memberDataString = localStorage.getItem("member_data");
@@ -189,7 +190,7 @@ onBeforeUnmount(() => {
       <div class="container-fluid">
         <RouterLink
           to="/"
-          class="navbar-brand fontTitle ms-5"
+          class="navbar-brand fontTitle ms-0 ms-md-5"
           active-class="active"
           >夏季</RouterLink
         >
