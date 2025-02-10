@@ -159,6 +159,7 @@ onBeforeUnmount(() => {
   width: 100%;
   margin: 0;
   padding: 0;
+  margin-top: 60px;
 }
 
 .diverseProdeuctsTitle {
