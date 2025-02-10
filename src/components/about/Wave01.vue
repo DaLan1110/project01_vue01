@@ -112,7 +112,6 @@
   height: 175vh;
   width: 100vw;
   margin-top: 50px;
-  margin-bottom: 60px;
   padding: 0;
 }
 
@@ -209,6 +208,9 @@
 }
 
 @media (max-width: 768px) {
+  .about-timeline {
+    margin-bottom: 150px;
+  }
 }
 
 @media (max-width: 300px) {
