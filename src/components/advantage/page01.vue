@@ -44,13 +44,13 @@ window.addEventListener("mousemove", handleMouseMove);
           :style="imageStyleRefreshing03"
         />
         <img
-          src="../../assets/img/homeWave01/drink002.jpg"
+          src="../../assets/img/homeWave01/drink020.jpg"
           alt=""
           class="img-size01 refreshing02-position"
           :style="imageStyleRefreshing02"
         />
         <img
-          src="../../assets/img/homeWave01/drink001.jpg"
+          src="../../assets/img/homeWave01/drink021.jpg"
           alt=""
           class="img-size01 refreshing03-position"
           :style="imageStyleRefreshing01"
