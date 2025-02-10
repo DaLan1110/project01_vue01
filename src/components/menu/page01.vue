@@ -230,6 +230,7 @@ onBeforeUnmount(() => {
   justify-content: center;
   align-items: center;
   width: 200px;
+  height: 60px;
   background-color: #ff9797;
   color: #ffffff;
   font-size: 30px;
@@ -237,7 +238,7 @@ onBeforeUnmount(() => {
   text-decoration: none;
   border: none;
   padding: 5px 20px; /* 調整按鈕內邊距 */
-  border-radius: 40%;
+  border-radius: 30%;
 }
 
 .menu-type-btn-style:hover {
