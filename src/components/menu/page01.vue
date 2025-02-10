@@ -237,8 +237,8 @@ onBeforeUnmount(() => {
   font-weight: 600;
   text-decoration: none;
   border: none;
-  padding: 5px 20px; /* 調整按鈕內邊距 */
-  border-radius: 30%;
+  padding: 5px 20px;
+  border-radius: 10px;
 }
 
 .menu-type-btn-style:hover {
