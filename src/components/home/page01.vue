@@ -183,6 +183,10 @@ onBeforeUnmount(() => {
   .articleLength_advantage {
     height: 45vh;
   }
+
+  .advantageTitle {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 550px) {
