@@ -386,6 +386,7 @@ onBeforeUnmount(() => {
   .menu-type-btn-style {
     width: 150px;
     font-size: 25px;
+    height: auto;
   }
 
   .menu-product-card-row {
