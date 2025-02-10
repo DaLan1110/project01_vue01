@@ -214,12 +214,8 @@ onBeforeUnmount(() => {
     left: 90px;
   }
 
-  .about-title-h1 {
-    margin-right: 10px;
-  }
-
-  .about-title-h2 {
-    margin-right: 10px;
+  .about-title-text {
+    margin-bottom: 60px;
   }
 }
 </style>
