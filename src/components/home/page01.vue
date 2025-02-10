@@ -148,6 +148,7 @@ onBeforeUnmount(() => {
   .articleLength_advantage {
     height: 65vh;
     margin-top: -70px;
+    margin-bottom: 60px;
   }
 }
 
@@ -174,11 +175,11 @@ onBeforeUnmount(() => {
   .advantageTitle {
     font-size: 23px;
   }
-  
-  .advantageContent{
+
+  .advantageContent {
     display: none;
   }
-  
+
   .articleLength_advantage {
     height: 45vh;
   }
