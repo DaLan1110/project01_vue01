@@ -112,6 +112,7 @@
   height: 175vh;
   width: 100vw;
   margin-top: 50px;
+  margin-bottom: 150px;
   padding: 0;
 }
 
