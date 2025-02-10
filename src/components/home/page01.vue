@@ -187,11 +187,9 @@ onBeforeUnmount(() => {
   .advantageTitle {
     font-size: 20px;
   }
-}
 
-@media (max-width: 550px) {
-  .advantageTitle {
-    font-size: 20px;
+  .articleLength_advantage {
+    margin-bottom: 0px;
   }
 }
 </style>
