@@ -102,7 +102,7 @@ onBeforeUnmount(() => {
   white-space: nowrap;
 }
 
-.about-title-h2{
+.about-title-h2 {
   white-space: nowrap;
 }
 
@@ -198,6 +198,20 @@ onBeforeUnmount(() => {
 
   .about-title-h2 {
     font-size: 17px;
+  }
+}
+
+@media (max-width: 420px) {
+  .positionDrink01-about {
+    width: 280px;
+    top: 0px;
+    left: -20px;
+  }
+
+  .positionDrink02-about {
+    width: 250px;
+    top: 0px;
+    left: 140px;
   }
 }
 </style>
