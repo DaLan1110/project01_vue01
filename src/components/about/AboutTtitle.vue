@@ -211,7 +211,15 @@ onBeforeUnmount(() => {
   .positionDrink02-about {
     width: 250px;
     top: 0px;
-    left: 100px;
+    left: 90px;
+  }
+
+  .about-title-h1 {
+    margin-right: 10px;
+  }
+
+  .about-title-h2 {
+    margin-right: 10px;
   }
 }
 </style>
