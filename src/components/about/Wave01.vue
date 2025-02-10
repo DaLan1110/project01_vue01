@@ -112,6 +112,7 @@
   height: 175vh;
   width: 100vw;
   margin-top: 50px;
+  margin-bottom: 60px;
   padding: 0;
 }
 
@@ -205,6 +206,9 @@
 .timeline ul li:hover:before {
   background-color: rgb(87, 88, 87);
   box-shadow: 0px 0px 10px 2px rgb(182, 182, 182);
+}
+
+@media (max-width: 768px) {
 }
 
 @media (max-width: 300px) {
