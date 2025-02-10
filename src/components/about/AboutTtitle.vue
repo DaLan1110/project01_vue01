@@ -102,7 +102,7 @@ onBeforeUnmount(() => {
   white-space: nowrap;
 }
 
-.about-title-h1{
+.about-title-h2{
   white-space: nowrap;
 }
 
