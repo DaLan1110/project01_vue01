@@ -420,16 +420,16 @@
 
 @media (max-width: 420px) {
   .joinUs-titletext{
-    margin-left: -10px;
+    margin-left: 50px;
   }
 
   .position-joinUs01-img {
-    left: 80px;
+    left: 50px;
     top: -8vh;
   }
 
   .position-joinUs01-2-img {
-    left: -50px;
+    left: -30px;
     top: -7vh;
   }
 }
