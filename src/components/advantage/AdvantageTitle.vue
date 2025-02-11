@@ -297,7 +297,6 @@
 @media (max-width: 420px) {
   .advantage-titletext {
     margin-left: -10px;
-    text-align: right;
     font-size: 22px !important;
   }
 

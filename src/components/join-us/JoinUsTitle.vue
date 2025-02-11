@@ -417,4 +417,20 @@
     width: 320px;
   }
 }
+
+@media (max-width: 420px) {
+  .joinUs-titletext{
+    margin-left: -10px;
+  }
+
+  .position-joinUs01-img {
+    left: 80px;
+    top: -8vh;
+  }
+
+  .position-joinUs01-2-img {
+    left: -50px;
+    top: -7vh;
+  }
+}
 </style>
