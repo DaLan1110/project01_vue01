@@ -31,7 +31,7 @@ export const useMemberStore = defineStore('memberStore', () => {
             );
             console.log("檔案建立成功", res.data);
 
-            alert("建立成功");
+            alert("註冊成功");
             resetNewMemberData();
 
             return true;  // 返回成功
