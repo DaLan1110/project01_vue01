@@ -252,5 +252,10 @@
   .branch-titletext {
     z-index: 500;
   }
+
+  .branch-title-img {
+    left: 60px;
+    width: 20vh;
+  }
 }
 </style>
