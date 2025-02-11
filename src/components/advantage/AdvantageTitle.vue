@@ -298,6 +298,7 @@
   .advantage-titletext {
     margin-left: -10px;
     text-align: right;
+    font-size: 22px !important;
   }
 
   .position-advantage01-img {
