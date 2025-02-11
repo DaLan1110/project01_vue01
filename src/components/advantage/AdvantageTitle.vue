@@ -296,7 +296,7 @@
 
 @media (max-width: 420px) {
   .advantage-titletext {
-    margin-left: -20px;
+    margin-left: -10px;
   }
 
   .position-advantage01-img {
