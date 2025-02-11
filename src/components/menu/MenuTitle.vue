@@ -254,7 +254,6 @@
   }
 
   .branch-title-img {
-    /* left: 60px; */
     width: 25vh;
     top: 5vh;
   }
