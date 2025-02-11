@@ -293,4 +293,16 @@
     font-size: 18px !important;
   }
 }
+
+@media (max-width: 420px) {
+  .advantage-titletext {
+    margin-left: -20px;
+  }
+
+  .position-advantage01-img {
+    top: -14vh;
+    left: -12vw;
+    width: 400px;
+  }
+}
 </style>
