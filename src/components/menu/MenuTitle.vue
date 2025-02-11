@@ -247,4 +247,10 @@
     left: 350px;
   }
 }
+
+@media (max-width: 500px) {
+  .branch-titletext {
+    z-index: 500;
+  }
+}
 </style>
