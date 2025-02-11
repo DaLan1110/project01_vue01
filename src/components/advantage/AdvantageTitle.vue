@@ -302,7 +302,7 @@
   }
 
   .position-advantage01-img {
-    top: -14vh;
+    top: -10vh;
     left: -12vw;
     width: 350px;
   }
