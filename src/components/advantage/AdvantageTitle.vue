@@ -303,7 +303,7 @@
   .position-advantage01-img {
     top: -14vh;
     left: -12vw;
-    width: 400px;
+    width: 350px;
   }
 }
 </style>
