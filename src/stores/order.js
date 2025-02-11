@@ -61,7 +61,7 @@ export const useOrderStore = defineStore('orderStore', () => {
         }
     }
 
-    // 更新 訂單狀態
+    // 更新 訂單狀態 取消付款
     const updateOrderState = async (orderId) => {
         try {
             const updateData = ({
@@ -76,6 +76,41 @@ export const useOrderStore = defineStore('orderStore', () => {
             // 處理成功響應
             console.log('訂單狀態更新成功:', response.data);
             alert('已取消訂單');
+
+            // 重新獲取訂單資料以確保狀態同步
+            await getOneOrderData(orderId);
+        } catch (error) {
+            // 處理錯誤
+            console.error('更新訂單狀態時發生錯誤:', error);
+            let errorMsg = '發生錯誤，請稍後再試。';
+
+            if (error.response) {
+                if (error.response.data && error.response.data.message) {
+                    errorMsg = error.response.data.message;
+                }
+            } else if (error.request) {
+                errorMsg = '請求未收到回應。';
+            }
+
+            alert(errorMsg);
+        }
+    }
+
+    // 更新 訂單狀態 完成付款
+    const updateCompleteOrderState = async (orderId) => {
+        try {
+            const updateData = ({
+                orderState: '已收款'
+            });
+            const response = await axios.put(`https://project01-back-end.onrender.com/orders/updateOrderState/${orderId}`, updateData, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${localStorage.getItem('token')}`
+                },
+            });
+            // 處理成功響應
+            console.log('訂單狀態更新成功:', response.data);
+            alert('收款完成');
 
             // 重新獲取訂單資料以確保狀態同步
             await getOneOrderData(orderId);
@@ -271,8 +306,10 @@ export const useOrderStore = defineStore('orderStore', () => {
         orders, getMemberOrderList,
         // 取得單筆訂單資料
         order, getOneOrderData,
-        // 更新 訂單狀態
+        // 更新 訂單狀態 取消訂單
         updateOrderState,
+        // 更新 訂單狀態 完成付款
+        updateCompleteOrderState,
         // 新增產品至購物車
         insertProductData, insertShoppingCart,
         // 查看購物車清單

@@ -189,6 +189,13 @@ onBeforeUnmount(() => {
             class="btn-style cancel-btn me-3"
             @click="cancelOrderState"
           >
+            完成付款
+          </button>
+          <button
+            v-if="order.order_state === '待核款'"
+            class="btn-style cancel-btn me-3"
+            @click="cancelOrderState"
+          >
             取消訂單
           </button>
           <RouterLink
