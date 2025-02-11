@@ -255,7 +255,7 @@
 
   .branch-title-img {
     left: 60px;
-    width: 20vh;
+    width: 25vh;
   }
 }
 </style>
