@@ -429,7 +429,7 @@
   }
 
   .position-joinUs01-2-img {
-    left: -30px;
+    left: -60px;
     top: -7vh;
   }
 }
