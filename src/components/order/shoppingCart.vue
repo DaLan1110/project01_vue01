@@ -333,7 +333,7 @@ onBeforeUnmount(() => {
           </div>
 
           <div
-            class="card-list-shoppingCart col-12"
+            class="card-list-shoppingCart col-12 mb-3"
             v-else-if="shoppingList.length === 0 && isSmallScreen"
           >
             <div class="shoppingcart-noshop">
