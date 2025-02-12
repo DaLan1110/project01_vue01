@@ -151,7 +151,7 @@ onBeforeUnmount(() => {
                 ? 'col-9'
                 : isMediumScreento1320
                 ? 'col-8'
-                : 'col-7'
+                : 'col-8'
               : route.name === 'orderList'
               ? isVerySmallScreen
                 ? 'col-10'
