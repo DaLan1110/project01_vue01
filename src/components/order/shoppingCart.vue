@@ -386,7 +386,7 @@ onBeforeUnmount(() => {
               >請選擇付款方式</label
             >
           </div>
-          <h3 style="font-weight: 600">
+          <h3 style="font-weight: 600" class="total-row-style">
             總金額: NT ${{ totalAmount.toFixed(0) }} 元
           </h3>
         </div>
@@ -663,6 +663,10 @@ onBeforeUnmount(() => {
 
   .shoppingCart-personal-floatingSelect {
     width: 120px !important;
+  }
+
+  .total-row-style{
+    font-size: 24px;
   }
 }
 </style>
