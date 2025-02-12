@@ -332,6 +332,19 @@ onBeforeUnmount(() => {
             </div>
           </div>
 
+          <div
+            class="card-list-shoppingCart col-12"
+            v-else-if="shoppingList.length === 0 && isSmallScreen"
+          >
+            <div class="shoppingcart-noshop">
+              <p
+                class="shoppingcart-noshop-cardlist-item d-flex justify-content-center"
+              >
+                <strong>無任何商品</strong>
+              </p>
+            </div>
+          </div>
+
           <table class="table table-bordered" style="font-size: 12px" v-else>
             <thead>
               <tr>
@@ -498,6 +511,36 @@ onBeforeUnmount(() => {
 
 .shoppingCart-personal-pagination-style {
   margin-top: -60px;
+}
+
+.shoppingcart-noshop {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative;
+}
+
+.shoppingcart-noshop p {
+  margin: 0.5rem 0;
+  padding-bottom: 10px; /* 增加底部內邊距 */
+  border-bottom: 1px solid #ddd; /* 為每個 p 元素添加底部邊框 */
+}
+
+.shoppingcart-noshop p:last-child {
+  border-bottom: none; /* 最後一個 p 元素去掉底部邊框 */
+}
+
+.shoppingcart-noshop-cardlist-item {
+  border: 1px solid #f9f9f9; /* 邊框顏色和樣式 */
+  padding: 10px; /* 內邊距 */
+  margin-bottom: 10px; /* 每個 p 元素之間的間距 */
+  background-color: #fff; /* 可選，背景顏色 */
+
+  display: flex;
+  align-items: center; /* 垂直居中對齊內容 */
+  gap: 10px; /* 在職位標籤和選擇框之間添加間隔 */
 }
 
 @media (max-width: 1500px) {
