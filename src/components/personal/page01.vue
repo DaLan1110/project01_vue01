@@ -164,6 +164,7 @@ const isFormValid = computed(() => {
             <PersonalPwd />
             <button
               class="btn-style save-btn"
+              style="white-space: nowrap"
               @click="handleUpdateMemberData"
               :disabled="!isFormValid"
             >
