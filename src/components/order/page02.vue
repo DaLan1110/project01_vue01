@@ -264,7 +264,7 @@ onBeforeUnmount(() => {
   font-weight: 600;
 }
 
-@media (max-width: 14500px) {
+@media (max-width: 1450px) {
   .personal-orderData-table thead th:nth-child(1),
   .personal-orderData-table tbody td:nth-child(1) {
     width: 7%;
