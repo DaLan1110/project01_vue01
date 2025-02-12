@@ -666,7 +666,7 @@ onBeforeUnmount(() => {
   }
 
   .total-row-style{
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 </style>
