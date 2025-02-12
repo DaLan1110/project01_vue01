@@ -82,7 +82,7 @@ const isFormValid = computed(() => {
         </div> -->
         <div
           class="card-body d-flex flex-column align-items-center"
-          style="padding-top: 30px"
+          style="padding: 0; padding-top: 30px"
         >
           <div class="mt-4 w-75">
             <ChangeImg
