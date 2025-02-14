@@ -14,7 +14,6 @@ const orderStore = useOrderStore();
 const { shoppingList, newOrderData, insertProductData } =
   storeToRefs(orderStore);
 
-const img_path = "https://project01-back-end.onrender.com/img/product/";
 const saveOrderPay = ref("");
 
 // 分頁
@@ -221,7 +220,7 @@ onBeforeUnmount(() => {
                   {{ (currentPage - 1) * itemsPerPage + index + 1 }}
                 </td>
                 <td class="text-center align-middle">
-                  <orderImg :img_path="img_path" :img_avatar="item.shop_img" />
+                  <orderImg :img_avatar="item.shop_img" />
                 </td>
                 <td class="text-center align-middle">{{ item.shop_name }}</td>
                 <td class="text-center align-middle">{{ item.shop_total }}</td>
@@ -283,7 +282,6 @@ onBeforeUnmount(() => {
                 <strong>產品總價:</strong>{{ item.shop_total }}
               </p>
               <orderImg
-                :img_path="img_path"
                 :img_avatar="item.shop_img"
                 :allowScreenStyle="allowScreenStyle"
                 class="shoppingCart-img-768"
@@ -665,7 +663,7 @@ onBeforeUnmount(() => {
     width: 120px !important;
   }
 
-  .total-row-style{
+  .total-row-style {
     font-size: 16px;
   }
 }
