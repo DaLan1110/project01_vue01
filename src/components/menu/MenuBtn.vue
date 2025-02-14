@@ -230,7 +230,7 @@ const insertProductToShoppingCart = () => {
               <div class="col-10 d-flex justify-content-center">
                 <div class="product-style-img">
                   <img
-                    :src="`https://project01-back-end.onrender.com/img/product/${product.product_img}`"
+                    :src="product.product_img"
                     alt=""
                     style="width: 100%; height: 100%; object-fit: cover"
                   />
