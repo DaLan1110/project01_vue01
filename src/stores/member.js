@@ -221,6 +221,8 @@ export const useMemberStore = defineStore('memberStore', () => {
                             console.error("刪除舊頭像時發生錯誤:", error);
                         }
                     }
+                } else {
+                    console.log("圖檔不存在");
                 }
 
                 // 上傳頭像
