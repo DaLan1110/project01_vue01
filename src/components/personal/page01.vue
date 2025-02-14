@@ -13,8 +13,6 @@ const routePathId = route.params.id;
 const memberStore = useMemberStore();
 const { member, tempImageUrl, tempImageUrlName } = storeToRefs(memberStore);
 
-const img_path = "https://project01-back-end.onrender.com/img/member/member/";
-
 const errors = ref({});
 
 const readMemberData = () => {
@@ -86,7 +84,6 @@ const isFormValid = computed(() => {
         >
           <div class="mt-4 w-75">
             <ChangeImg
-              :img_path="img_path"
               :img_avatar="member.member_avatar"
               @updateAvatar="handleImgUpdate"
             />

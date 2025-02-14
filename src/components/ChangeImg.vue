@@ -4,7 +4,7 @@ import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 // 接收來自父元件的 props
 const propsImg = defineProps({
   img_avatar: String, // 父元件會傳入 img_avatar
-  img_path: String, // 父元件會傳入 img_path
+  // img_path: String, // 父元件會傳入 img_path
 });
 
 const tempImageUrl = ref("");
@@ -12,10 +12,10 @@ const emit = defineEmits(["updateAvatar"]);
 
 const imgAvatarUrl = computed(() => {
   const avatar = propsImg.img_avatar;
-  const path = propsImg.img_path;
+  // const path = propsImg.img_path;
   if (avatar) {
     // 確保圖片路徑是正確的
-    return new URL(`${path}${avatar}`, import.meta.url).href;
+    return new URL(`${avatar}`, import.meta.url).href;
   }
   // 如果没有頭像，返回一个默認圖片或空字符串
   return ""; // 可以换成一個默認圖片 URL
