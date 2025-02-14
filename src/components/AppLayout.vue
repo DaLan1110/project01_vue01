@@ -24,8 +24,8 @@ const memberName = ref("");
 const memberAvatar = ref("");
 const memberPersonalData = ref("");
 const memberId = ref("");
-const baseAvatarUrl =
-  "https://project01-back-end.onrender.com/img/member/member/";
+// const baseAvatarUrl =
+//   "https://project01-back-end.onrender.com/img/member/member/";
 
 const checkLocalStorage = () => {
   const memberDataString = localStorage.getItem("member_data");
@@ -44,7 +44,7 @@ const checkLocalStorage = () => {
     lastMemberDataString = memberDataString; // 更新為新的值
     memberData.value = JSON.parse(memberDataString);
     memberName.value = memberData.value.member_name || "會員名稱";
-    memberAvatar.value = baseAvatarUrl + (memberData.value.member_avatar || "");
+    memberAvatar.value = memberData.value.member_avatar || "";
     memberPersonalData.value = memberData.value;
     memberId.value = memberData.value.memberId;
   } else if (!memberDataString) {
@@ -60,7 +60,7 @@ watch(
     localStorage.setItem("member_data", JSON.stringify(newValue)); // 更新 localStorage
     console.log("Updated memberData:", newValue);
     memberName.value = newValue.member_name;
-    memberAvatar.value = baseAvatarUrl + (newValue.member_avatar || "");
+    memberAvatar.value = newValue.member_avatar || "";
     memberId.value = newValue.memberId;
   },
   { deep: true }
@@ -290,7 +290,7 @@ onBeforeUnmount(() => {
               <li class="nav-item d-flex">
                 <div class="circle-img mt-1 ms-2">
                   <img
-                    v-if="memberAvatar && memberAvatar !== baseAvatarUrl"
+                    v-if="memberAvatar"
                     :src="memberAvatar"
                     alt=""
                     style="width: 100%; height: 100%; object-fit: cover"
@@ -439,7 +439,7 @@ onBeforeUnmount(() => {
             <li class="nav-item">
               <div class="circle-img mt-1">
                 <img
-                  v-if="memberAvatar && memberAvatar !== baseAvatarUrl"
+                  v-if="memberAvatar"
                   :src="memberAvatar"
                   alt=""
                   style="width: 100%; height: 100%; object-fit: cover"
