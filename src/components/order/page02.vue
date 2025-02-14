@@ -12,7 +12,6 @@ const routePathMemberId = route.params.id;
 
 const orderStore = useOrderStore();
 const { order } = storeToRefs(orderStore);
-const img_path = "https://project01-back-end.onrender.com/img/product/";
 
 // 分頁
 const paginatedMembers = ref({});
@@ -111,7 +110,7 @@ onBeforeUnmount(() => {
                   {{ (currentPage - 1) * itemsPerPage + index + 1 }}
                 </td>
                 <td class="text-center align-middle">
-                  <orderImg :img_path="img_path" :img_avatar="item.shop_img" />
+                  <orderImg :img_avatar="item.shop_img" />
                 </td>
                 <td class="text-center align-middle">{{ item.shop_name }}</td>
                 <td class="text-center align-middle">
@@ -147,7 +146,6 @@ onBeforeUnmount(() => {
                 <strong>產品數量:</strong>{{ item.shop_quantity }}
               </p>
               <orderImg
-                :img_path="img_path"
                 :img_avatar="item.shop_img"
                 class="shoppingCart-img-768"
               />
