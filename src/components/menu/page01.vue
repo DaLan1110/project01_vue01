@@ -140,11 +140,7 @@ onBeforeUnmount(() => {
           >
             <div class="menu-product-card">
               <div class="card" style="width: 25rem">
-                <img
-                  :src="`https://project01-back-end.onrender.com/img/product/${item.product_img}`"
-                  class="card-img-top"
-                  alt=""
-                />
+                <img :src="item.product_img" class="card-img-top" alt="" />
                 <div>
                   <div class="menu-prodect-name-row">
                     <p class="menu-prodect-name-font">
