@@ -437,9 +437,9 @@ const insertProductToShoppingCart = () => {
 }
 
 @media (max-width: 800px) {
-  .modal-lg {
-    max-width: 650px !important; /* 固定寬度 */
-  }
+  /* .modal-lg {
+    max-width: 650px !important;
+  } */
 
   .product-style-img {
     width: 240px;
