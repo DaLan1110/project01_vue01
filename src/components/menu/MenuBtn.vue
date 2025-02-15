@@ -458,6 +458,10 @@ const insertProductToShoppingCart = () => {
   .product-row-add-style {
     flex-wrap: wrap !important; /* 允許項目換行 */
   }
+
+  .total-money-text-style {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 600px) {
