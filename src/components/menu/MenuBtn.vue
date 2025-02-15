@@ -192,7 +192,7 @@ const insertProductToShoppingCart = () => {
 
 <template>
   <button
-    class="btn mt-5 menu-prodect-btn"
+    class="btn mt-3 menu-prodect-btn"
     data-bs-toggle="modal"
     data-bs-target="#exampleModal"
     @click="handleProductData"
