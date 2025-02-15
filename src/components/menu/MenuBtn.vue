@@ -445,6 +445,10 @@ const insertProductToShoppingCart = () => {
     width: 240px;
     height: 320px;
   }
+
+  .total-money-text-style {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -455,9 +459,9 @@ const insertProductToShoppingCart = () => {
     margin-bottom: 15px !important;
   }
 
-  .modal-lg {
-    max-width: 600px !important; /* 固定寬度 */
-  }
+  /* .modal-lg {
+    max-width: 600px !important;
+  } */
 
   .product-row-add-style {
     flex-wrap: wrap !important; /* 允許項目換行 */
