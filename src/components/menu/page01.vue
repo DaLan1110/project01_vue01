@@ -278,6 +278,7 @@ onBeforeUnmount(() => {
   font-weight: 600;
   color: #ffffff;
   text-align: left;
+  margin-left: 10px;
 }
 
 @media (max-width: 1400px) {
