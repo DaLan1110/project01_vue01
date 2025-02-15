@@ -423,10 +423,6 @@ const insertProductToShoppingCart = () => {
   .modal-lg {
     max-width: 750px !important; /* 固定寬度 */
   }
-
-  .total-money-text-style {
-    font-size: 18px;
-  }
 }
 
 @media (max-width: 990px) {
@@ -437,9 +433,9 @@ const insertProductToShoppingCart = () => {
 }
 
 @media (max-width: 800px) {
-  /* .modal-lg {
+  .modal-lg {
     max-width: 650px !important;
-  } */
+  }
 
   .product-style-img {
     width: 240px;
@@ -455,9 +451,9 @@ const insertProductToShoppingCart = () => {
     margin-bottom: 15px !important;
   }
 
-  /* .modal-lg {
+  .modal-lg {
     max-width: 600px !important;
-  } */
+  }
 
   .product-row-add-style {
     flex-wrap: wrap !important; /* 允許項目換行 */
