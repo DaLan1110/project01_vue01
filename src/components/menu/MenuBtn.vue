@@ -300,9 +300,11 @@ const insertProductToShoppingCart = () => {
               </div>
               <div class="mt-4 text-start">
                 <label for="member_email">選擇加料(選擇)</label>
-                <div class="my-2 d-flex align-items-center">
+                <div
+                  class="my-2 d-flex align-items-center product-row-add-style"
+                >
                   <div
-                    class="form-check form-check-inline"
+                    class="form-check form-check-inline product-check-add-style"
                     v-for="(add, index) in addOptions"
                     :key="index"
                   >
@@ -408,7 +410,11 @@ const insertProductToShoppingCart = () => {
 }
 
 .check-add-name {
-  white-space: nowrap;
+  white-space: nowrap; /* 防止文字換行 */
+}
+
+.product-check-add-style {
+  flex: 0 0 10%;
 }
 
 @media (max-width: 990px) {
@@ -449,6 +455,10 @@ const insertProductToShoppingCart = () => {
 
   .modal-lg {
     max-width: 600px !important; /* 固定寬度 */
+  }
+
+  .product-row-add-style {
+    flex-wrap: wrap !important; /* 允許項目換行 */
   }
 }
 </style>
