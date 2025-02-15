@@ -428,6 +428,10 @@ const insertProductToShoppingCart = () => {
     width: 270px;
     height: 360px;
   }
+
+  .total-money-text-style {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -444,10 +448,6 @@ const insertProductToShoppingCart = () => {
   .product-style-img {
     width: 240px;
     height: 320px;
-  }
-
-  .total-money-text-style {
-    font-size: 18px;
   }
 }
 
