@@ -325,7 +325,9 @@ const insertProductToShoppingCart = () => {
                 </div>
               </div>
               <div class="text-end fw-bold mt-4" style="margin-right: 0">
-                <h3>總金額: NT $ {{ totalPrice.toFixed(0) }} 元</h3>
+                <h3 class="total-money-text-style">
+                  總金額: NT $ {{ totalPrice.toFixed(0) }} 元
+                </h3>
               </div>
             </div>
           </div>
@@ -459,6 +461,12 @@ const insertProductToShoppingCart = () => {
 
   .product-row-add-style {
     flex-wrap: wrap !important; /* 允許項目換行 */
+  }
+}
+
+@media (max-width: 600px) {
+  .total-money-text-style {
+    font-size: 18px;
   }
 }
 </style>
