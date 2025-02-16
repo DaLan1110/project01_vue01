@@ -298,7 +298,10 @@ const insertProductToShoppingCart = () => {
                   </option>
                 </select>
               </div>
-              <div class="mt-4 text-start">
+              <div
+                class="mt-4 text-start"
+                v-if="addOptions && addOptions.length"
+              >
                 <label for="member_email">選擇加料(選擇)</label>
                 <div
                   class="my-2 d-flex align-items-center product-row-add-style"
