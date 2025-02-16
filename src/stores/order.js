@@ -297,7 +297,7 @@ export const useOrderStore = defineStore('orderStore', () => {
             await getShoppingList(memberId);
         } catch (error) {
             console.error("提交訂單時出現錯誤", error);
-            alert("提交失敗，請稍後再試！");
+            alert("未選擇付款方式, 訂單提交失敗");
         }
     }
 
