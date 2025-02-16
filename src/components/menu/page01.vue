@@ -227,7 +227,7 @@ onBeforeUnmount(() => {
   align-items: center;
   width: 200px;
   height: 60px;
-  background-color: #ff9797;
+  background-color: #cd853f;
   color: #ffffff;
   font-size: 30px;
   font-weight: 600;
@@ -238,13 +238,13 @@ onBeforeUnmount(() => {
 }
 
 .menu-type-btn-style:hover {
-  background-color: #ff9797;
+  background-color: #cd853f;
   color: #ffffff;
   opacity: 0.8;
 }
 
 .menu-type-btn-style.active {
-  background-color: #ff9797;
+  background-color: #a0522d;
   color: #ffffff;
   opacity: 0.8;
 }
