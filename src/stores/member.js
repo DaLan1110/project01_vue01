@@ -300,6 +300,9 @@ export const useMemberStore = defineStore('memberStore', () => {
             console.log(member);
             alert(response.data.message);
 
+            tempImageUrl.value = "";
+            tempImageUrlName.value = "";
+
         } catch (error) {
             console.error("更新資料時發生錯誤:", error);
         }
