@@ -88,6 +88,7 @@ export const useMemberStore = defineStore('memberStore', () => {
 
             // 檢查權限是否為 '關閉'
             const memberPermissions = res.data.member.member_permissions;
+            console.log("memberPermissions", memberPermissions);
             if (memberPermissions === '關閉') {
                 alert('權限已關閉，請聯絡客服');
                 // 如果權限是'關閉'，直接返回，不繼續執行以下的登入邏輯
