@@ -179,6 +179,7 @@ export const useMemberStore = defineStore('memberStore', () => {
         localStorage.removeItem('token');
         localStorage.removeItem('member_data'); // 移除存儲的用户數據
         localStorage.removeItem('member_avatar'); // 移除存儲的用户頭像
+        localStorage.removeItem('memberData'); // 移除存儲的用户更新資料
         isAuthenticated.value = false;
         setMember({ member_name: "", member_permissions: "", member_avatar: "" }); // 重置用戶資料
         console.log("登出成功");
