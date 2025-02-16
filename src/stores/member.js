@@ -147,23 +147,40 @@ export const useMemberStore = defineStore('memberStore', () => {
                 const res = await axios.get('https://project01-back-end.onrender.com/members/checkJwt', {
                     headers: { Authorization: `Bearer ${token}` }
                 });
-                isAuthenticated.value = res.data.valid;
-                setMember(JSON.parse(storedMemberData)); // 恢復用戶數據
-                console.log("驗證成功")
+                // isAuthenticated.value = res.data.valid;
+                // setMember(JSON.parse(storedMemberData)); // 恢復用戶數據
+                // console.log("驗證成功")
+                if (res.data.valid) {
+                    isAuthenticated.value = true;
+                    try {
+                        // 確保 JSON 格式正確才解析
+                        const memberData = JSON.parse(storedMemberData);
+                        setMember(memberData); // 恢復用戶數據
+                    } catch (parseError) {
+                        console.error("解析 member_data 失敗，清除 localStorage", parseError);
+                        logoutMemberAccount(); // 解析錯誤時直接登出
+                    }
+
+                    console.log("驗證成功");
+                } else {
+                    throw new Error("JWT 無效"); // 讓錯誤處理流程執行
+                }
             } catch (error) {
-                isAuthenticated.value = false;
-                // console.error("JWT 驗證失敗", error);
+                console.warn("JWT 驗證失敗，登出用戶");
+                logoutMemberAccount(); // 調用登出函式
             }
         } else {
-            isAuthenticated.value = false;
+            logoutMemberAccount(); // 調用登出函式
         }
     };
 
     // 登出會員
     const logoutMemberAccount = () => {
         localStorage.removeItem('token');
-        localStorage.removeItem('member_data'); // 移除存储的用户数据
+        localStorage.removeItem('member_data'); // 移除存儲的用户數據
+        localStorage.removeItem('member_avatar'); // 移除存儲的用户頭像
         isAuthenticated.value = false;
+        setMember({ member_name: "", member_permissions: "", member_avatar: "" }); // 重置用戶資料
         console.log("登出成功");
     };
 
