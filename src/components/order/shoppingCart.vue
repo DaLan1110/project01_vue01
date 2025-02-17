@@ -48,11 +48,13 @@ const decreaseQuantity = (item) => {
 
 const increaseQuantity = (item) => {
   item.shop_quantity++;
-  console.log('shop_quantity', item.shop_quantity);
-  console.log('shop_price', item.shop_price);
-  orderStore.updateShopQuantity(item.shop_quantity, item.id).then(() => {
-    orderStore.getShoppingList(routePathId);
-  });
+  console.log("shop_quantity", item.shop_quantity);
+  console.log("shop_price", item.shop_price);
+  orderStore
+    .updateShopQuantity(item.shop_quantity, item.shop_price, item.id)
+    .then(() => {
+      orderStore.getShoppingList(routePathId);
+    });
 };
 
 // 計算總金額

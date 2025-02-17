@@ -203,10 +203,11 @@ export const useOrderStore = defineStore('orderStore', () => {
     }
 
     // 更新產品數量
-    const updateShopQuantity = async (shopQuantity, id) => {
+    const updateShopQuantity = async (shopQuantity, shopPrice, id) => {
         try {
             const updateData = {
-                shop_quantity: shopQuantity
+                shop_quantity: shopQuantity,
+                shop_price: shopPrice,
             }
             // 將資料發送到後端進行更新
             const response = await axios.put(
