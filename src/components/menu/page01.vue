@@ -58,6 +58,7 @@ const itemsPerRow = ref(4);
 
 const updateItemsPerRow = () => {
   const width = window.innerWidth;
+  console.log("螢幕寬度:", width);
   if (width < 1200) {
     itemsPerRow.value = 2; // 1200px 以下變成 2 個
   } else if (width < 1400) {
@@ -65,6 +66,7 @@ const updateItemsPerRow = () => {
   } else {
     itemsPerRow.value = 4; // 預設 4 個
   }
+  console.log("當前 itemsPerRow:", itemsPerRow.value);
 };
 
 // 計算每行的產品數據，確保最後一行補滿
@@ -115,7 +117,7 @@ onMounted(() => {
     }
   }
 
-  updateScreenSize(); // 初始化
+  updateItemsPerRow();
   window.addEventListener("resize", updateItemsPerRow);
 });
 
