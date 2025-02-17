@@ -250,7 +250,7 @@ onBeforeUnmount(() => {
 }
 
 .menu-product-card-row {
-  width: 320px !important;
+  width: 300px !important;
   height: auto;
 }
 
