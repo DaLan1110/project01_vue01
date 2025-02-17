@@ -54,20 +54,32 @@ const filteredOrders = computed(() => {
   return productClassify;
 });
 
-// 計算每行的產品數據，確保最後一行補滿 4 個
+const itemsPerRow = ref(4);
+
+const updateItemsPerRow = () => {
+  const width = window.innerWidth;
+  if (width < 1200) {
+    itemsPerRow.value = 2; // 1200px 以下變成 2 個
+  } else if (width < 1400) {
+    itemsPerRow.value = 3; // 1400px 以下變成 3 個
+  } else {
+    itemsPerRow.value = 4; // 預設 4 個
+  }
+};
+
+// 計算每行的產品數據，確保最後一行補滿
 const groupedOrders = computed(() => {
-  const itemsPerRow = 4; // 每行顯示的數量
   const rows = [];
   const productList = [...filteredOrders.value];
 
-  for (let i = 0; i < productList.length; i += itemsPerRow) {
-    rows.push(productList.slice(i, i + itemsPerRow));
+  for (let i = 0; i < productList.length; i += itemsPerRow.value) {
+    rows.push(productList.slice(i, i + itemsPerRow.value));
   }
 
-  // 如果最後一行不足 4 個，則補足空白
+  // 如果最後一行不足 itemsPerRow，則補足空白
   const lastRow = rows[rows.length - 1];
-  if (lastRow && lastRow.length < itemsPerRow) {
-    const emptySlots = itemsPerRow - lastRow.length;
+  if (lastRow && lastRow.length < itemsPerRow.value) {
+    const emptySlots = itemsPerRow.value - lastRow.length;
     for (let i = 0; i < emptySlots; i++) {
       lastRow.push({ id: `empty-${i}`, empty: true }); // 插入空白元素
     }
@@ -88,11 +100,11 @@ const selectClassify = (classify) => {
 };
 
 // RWD
-const isSmallScreen = ref(window.innerWidth < 768);
+// const isSmallScreen = ref(window.innerWidth < 768);
 
-const updateScreenSize = () => {
-  isSmallScreen.value = window.innerWidth < 768;
-};
+// const updateScreenSize = () => {
+//   isSmallScreen.value = window.innerWidth < 768;
+// };
 
 onMounted(() => {
   const area = route.query.area;
@@ -104,11 +116,11 @@ onMounted(() => {
   }
 
   updateScreenSize(); // 初始化
-  window.addEventListener("resize", updateScreenSize);
+  window.addEventListener("resize", updateItemsPerRow);
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener("resize", updateScreenSize);
+  window.removeEventListener("resize", updateItemsPerRow);
 });
 </script>
 
