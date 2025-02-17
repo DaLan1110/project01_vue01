@@ -361,29 +361,21 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 1400px) {
-  /* .menu-product-card-row {
-    width: 280px !important;
+  .menu-type-btn-style {
+    width: 180px;
+    font-size: 30px;
   }
-
-  .card-img-top {
-    height: 400px;
-  } */
-
+  
   .menu-product-card {
     width: 250px !important;
   }
 
   .empty-card {
-    width: 300px;
-    margin: 10px;
-    height: auto; /* 與正常卡片保持一致 */
-    background-color: transparent; /* 可以設定為透明或灰色背景 */
+    width: 250px;
   }
 
   .card-img-top {
-    width: 100%;
     height: 375px;
-    object-fit: cover;
   }
 }
 
