@@ -132,7 +132,7 @@ onBeforeUnmount(() => {
         class="container mt-5 d-flex justify-content-center"
         style="margin-bottom: 150px"
       >
-        <div class="row d-flex justify-content-start ml-2">
+        <div class="row d-flex justify-content-start ms-5">
           <div
             class="menu-product-card-row"
             v-for="(item, index) in filteredOrders"
