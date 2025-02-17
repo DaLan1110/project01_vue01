@@ -132,24 +132,26 @@ onBeforeUnmount(() => {
         class="container mt-5 d-flex justify-content-center"
         style="margin-bottom: 150px"
       >
-        <div class="row d-flex justify-content-start">
-          <div
-            class="menu-product-card-row"
-            v-for="(item, index) in filteredOrders"
-            :key="index"
-          >
-            <div class="menu-product-card">
-              <div class="card" style="width: 25rem">
-                <img :src="item.product_img" class="card-img-top" alt="" />
-                <div>
-                  <div class="menu-prodect-name-row">
-                    <p class="menu-prodect-name-font">
-                      {{ item.product_name }}
-                    </p>
-                  </div>
+        <div style="width: auto">
+          <div class="row d-flex justify-content-start">
+            <div
+              class="menu-product-card-row"
+              v-for="(item, index) in filteredOrders"
+              :key="index"
+            >
+              <div class="menu-product-card">
+                <div class="card" style="width: 25rem">
+                  <img :src="item.product_img" class="card-img-top" alt="" />
+                  <div>
+                    <div class="menu-prodect-name-row">
+                      <p class="menu-prodect-name-font">
+                        {{ item.product_name }}
+                      </p>
+                    </div>
 
-                  <!-- <button class="btn mt-5 menu-prodect-btn">商品介紹</button> -->
-                  <MenuBtn :id="item.id" />
+                    <!-- <button class="btn mt-5 menu-prodect-btn">商品介紹</button> -->
+                    <MenuBtn :id="item.id" />
+                  </div>
                 </div>
               </div>
             </div>
