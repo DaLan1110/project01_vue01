@@ -132,26 +132,24 @@ onBeforeUnmount(() => {
         class="container mt-5 d-flex justify-content-center"
         style="margin-bottom: 150px"
       >
-        <div class="d-flex justify-content-center">
-          <div class="menu-product-container">
-            <div
-              class="menu-product-card-row"
-              v-for="(item, index) in filteredOrders"
-              :key="index"
-            >
-              <div class="menu-product-card">
-                <div class="card" style="width: 25rem">
-                  <img :src="item.product_img" class="card-img-top" alt="" />
-                  <div>
-                    <div class="menu-prodect-name-row">
-                      <p class="menu-prodect-name-font">
-                        {{ item.product_name }}
-                      </p>
-                    </div>
-
-                    <!-- <button class="btn mt-5 menu-prodect-btn">商品介紹</button> -->
-                    <MenuBtn :id="item.id" />
+        <div class="row d-flex justify-content-center">
+          <div
+            class="menu-product-card-row"
+            v-for="(item, index) in filteredOrders"
+            :key="index"
+          >
+            <div class="menu-product-card">
+              <div class="card">
+                <img :src="item.product_img" class="card-img-top" alt="" />
+                <div>
+                  <div class="menu-prodect-name-row">
+                    <p class="menu-prodect-name-font">
+                      {{ item.product_name }}
+                    </p>
                   </div>
+
+                  <!-- <button class="btn mt-5 menu-prodect-btn">商品介紹</button> -->
+                  <MenuBtn :id="item.id" />
                 </div>
               </div>
             </div>
@@ -251,20 +249,9 @@ onBeforeUnmount(() => {
   opacity: 0.8;
 }
 
-.menu-product-container {
-  display: flex;
-  flex-wrap: wrap; /* 允許換行 */
-  justify-content: center; /* 讓第一行置中 */
-  max-width: 100%; /* 避免容器影響子元素 */
-}
-
 .menu-product-card-row {
   width: 300px !important;
   height: auto;
-
-  display: flex;
-  justify-content: flex-start; /* 讓換行後從左側開始填滿 */
-  flex-wrap: wrap;
 }
 
 .card-img-top {
@@ -277,7 +264,6 @@ onBeforeUnmount(() => {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  margin: 10px; /* 調整間距 */
 }
 
 .menu-prodect-name-row {
