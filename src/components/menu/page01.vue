@@ -54,6 +54,28 @@ const filteredOrders = computed(() => {
   return productClassify;
 });
 
+// 計算每行的產品數據，確保最後一行補滿 4 個
+const groupedOrders = computed(() => {
+  const itemsPerRow = 4; // 每行顯示的數量
+  const rows = [];
+  const productList = [...filteredOrders.value];
+
+  for (let i = 0; i < productList.length; i += itemsPerRow) {
+    rows.push(productList.slice(i, i + itemsPerRow));
+  }
+
+  // 如果最後一行不足 4 個，則補足空白
+  const lastRow = rows[rows.length - 1];
+  if (lastRow && lastRow.length < itemsPerRow) {
+    const emptySlots = itemsPerRow - lastRow.length;
+    for (let i = 0; i < emptySlots; i++) {
+      lastRow.push({ id: `empty-${i}`, empty: true }); // 插入空白元素
+    }
+  }
+
+  return rows;
+});
+
 // 處理區域按鈕點擊事件
 const selectArea = (area) => {
   selectedArea.value = area;
@@ -132,7 +154,7 @@ onBeforeUnmount(() => {
         class="container mt-5 d-flex justify-content-center"
         style="margin-bottom: 150px"
       >
-        <div class="row d-flex justify-content-center">
+        <!-- <div class="row d-flex justify-content-center">
           <div
             class="menu-product-card-row"
             v-for="(item, index) in filteredOrders"
@@ -148,13 +170,41 @@ onBeforeUnmount(() => {
                     </p>
                   </div>
 
-                  <!-- <button class="btn mt-5 menu-prodect-btn">商品介紹</button> -->
                   <MenuBtn :id="item.id" />
                 </div>
               </div>
             </div>
           </div>
+        </div> -->
+
+        <div class="row d-flex justify-content-center">
+          <div
+            class="menu-product-card-row"
+            v-for="(row, rowIndex) in groupedOrders"
+            :key="rowIndex"
+          >
+            <div
+              v-for="(item, index) in row"
+              :key="index"
+              class="menu-product-card"
+            >
+              <div class="card" style="width: 25rem" v-if="!item.empty">
+                <img :src="item.product_img" class="card-img-top" alt="" />
+                <div>
+                  <div class="menu-prodect-name-row">
+                    <p class="menu-prodect-name-font">
+                      {{ item.product_name }}
+                    </p>
+                  </div>
+                  <MenuBtn :id="item.id" />
+                </div>
+              </div>
+              <!-- 空白卡片 -->
+              <div class="empty-card" v-else></div>
+            </div>
+          </div>
         </div>
+        
       </div>
     </div>
   </div>
