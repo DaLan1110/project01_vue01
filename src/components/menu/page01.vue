@@ -467,10 +467,10 @@ onBeforeUnmount(() => {
     height: auto;
   }
 
-  .menu-product-card-row {
+  /* .menu-product-card-row {
     width: 160px !important;
     margin: 0;
-  }
+  } */
 
   .card-img-top {
     height: 210px;
@@ -502,10 +502,10 @@ onBeforeUnmount(() => {
     margin: 30px 15px;
   }
 
-  .menu-product-card-row {
+  /* .menu-product-card-row {
     width: 200px !important;
     margin: 10px;
-  }
+  } */
 
   .card-img-top {
     height: 260px;
