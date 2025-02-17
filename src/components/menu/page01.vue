@@ -132,7 +132,7 @@ onBeforeUnmount(() => {
         class="container mt-5 d-flex justify-content-center"
         style="margin-bottom: 150px"
       >
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-start">
           <div
             class="menu-product-card-row"
             v-for="(item, index) in filteredOrders"
@@ -252,9 +252,6 @@ onBeforeUnmount(() => {
 .menu-product-card-row {
   width: 300px !important;
   height: auto;
-  display: flex;
-  justify-content: center; /* 讓每行內容置中 */
-  flex-wrap: wrap; /* 允許換行 */
 }
 
 .card-img-top {
@@ -266,7 +263,6 @@ onBeforeUnmount(() => {
 .menu-product-card {
   display: flex;
   justify-content: center;
-  margin: 10px; /* 增加間距，避免貼太緊 */
   margin-top: 30px;
 }
 
