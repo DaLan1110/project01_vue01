@@ -188,7 +188,7 @@ onBeforeUnmount(() => {
               :key="index"
               class="menu-product-card"
             >
-              <div class="card" style="width: 25rem" v-if="!item.empty">
+              <div class="card" v-if="!item.empty">
                 <img :src="item.product_img" class="card-img-top" alt="" />
                 <div>
                   <div class="menu-prodect-name-row">
