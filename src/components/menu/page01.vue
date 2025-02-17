@@ -204,7 +204,6 @@ onBeforeUnmount(() => {
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   </div>
@@ -299,21 +298,39 @@ onBeforeUnmount(() => {
   opacity: 0.8;
 }
 
-.menu-product-card-row {
+/* .menu-product-card-row {
   width: 320px !important;
   height: auto;
+} */
+
+/* .menu-product-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+} */
+
+.menu-product-card-row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu-product-card {
+  width: 25rem;
+  margin: 10px;
+}
+
+.empty-card {
+  width: 25rem;
+  margin: 10px;
+  height: 300px; /* 與正常卡片保持一致 */
+  background-color: transparent; /* 可以設定為透明或灰色背景 */
 }
 
 .card-img-top {
   width: 100%;
   height: 450px;
   object-fit: cover;
-}
-
-.menu-product-card {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
 }
 
 .menu-prodect-name-row {
