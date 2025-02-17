@@ -245,7 +245,7 @@ onBeforeUnmount(() => {
 }
 
 .menu-area-btn-style.active {
-  background-color: #B088FF;
+  background-color: #D1BBFF;
   color: #ffffff;
   opacity: 0.8;
 }
