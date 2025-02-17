@@ -389,7 +389,7 @@ onBeforeUnmount(() => {
     height: 300px;
   }
 
-  .menu-prodect-name-font{
+  .menu-prodect-name-font {
     font-size: 24px;
   }
 }
@@ -426,6 +426,10 @@ onBeforeUnmount(() => {
 @media (max-width: 900px) {
   .menu-type-btn-style {
     width: 140px;
+    font-size: 22px;
+  }
+
+  .menu-prodect-name-font {
     font-size: 22px;
   }
 }
