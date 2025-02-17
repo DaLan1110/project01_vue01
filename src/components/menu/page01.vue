@@ -255,7 +255,7 @@ onBeforeUnmount(() => {
   display: flex;
   flex-wrap: wrap; /* 允許換行 */
   justify-content: flex-start; /* 讓換行後的內容從左側開始 */
-  max-width: 1000px; /* 限制最大寬度，確保置中效果 */
+  max-width: 1000px !important; /* 限制最大寬度，確保置中效果 */
   margin: 0 auto; /* 讓整個容器置中 */
 }
 
