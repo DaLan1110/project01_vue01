@@ -326,7 +326,7 @@ onBeforeUnmount(() => {
 .menu-product-card-row {
   margin-bottom: 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .menu-product-card {
@@ -370,12 +370,6 @@ onBeforeUnmount(() => {
   .card-img-top {
     height: 400px;
   } */
-
-  .menu-product-card-row {
-    margin-bottom: 30px;
-    display: flex !important;
-    justify-content: flex-start !important;
-  }
 }
 
 /*@media (max-width: 1200px) {
