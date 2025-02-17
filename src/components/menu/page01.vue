@@ -321,8 +321,8 @@ onBeforeUnmount(() => {
 }
 
 .menu-product-card img {
-  width: 100%;
-  height: 300px; /* 固定圖片高度 */
+  width: 300px !important;
+  height: auto; /* 固定圖片高度 */
   object-fit: cover; /* 確保圖片不變形 */
 }
 
