@@ -133,23 +133,25 @@ onBeforeUnmount(() => {
         style="margin-bottom: 150px"
       >
         <div class="row d-flex justify-content-center">
-          <div
-            class="menu-product-card-row"
-            v-for="(item, index) in filteredOrders"
-            :key="index"
-          >
-            <div class="menu-product-card">
-              <div class="card">
-                <img :src="item.product_img" class="card-img-top" alt="" />
-                <div>
-                  <div class="menu-prodect-name-row">
-                    <p class="menu-prodect-name-font">
-                      {{ item.product_name }}
-                    </p>
-                  </div>
+          <div class="menu-product-container">
+            <div
+              class="menu-product-card-row"
+              v-for="(item, index) in filteredOrders"
+              :key="index"
+            >
+              <div class="menu-product-card">
+                <div class="card">
+                  <img :src="item.product_img" class="card-img-top" alt="" />
+                  <div>
+                    <div class="menu-prodect-name-row">
+                      <p class="menu-prodect-name-font">
+                        {{ item.product_name }}
+                      </p>
+                    </div>
 
-                  <!-- <button class="btn mt-5 menu-prodect-btn">商品介紹</button> -->
-                  <MenuBtn :id="item.id" />
+                    <!-- <button class="btn mt-5 menu-prodect-btn">商品介紹</button> -->
+                    <MenuBtn :id="item.id" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -249,9 +251,18 @@ onBeforeUnmount(() => {
   opacity: 0.8;
 }
 
+.menu-product-container {
+  display: flex;
+  flex-wrap: wrap; /* 允許換行 */
+  justify-content: flex-start; /* 讓換行後的內容從左側開始 */
+  max-width: 1000px; /* 限制最大寬度，確保置中效果 */
+  margin: 0 auto; /* 讓整個容器置中 */
+}
+
 .menu-product-card-row {
   width: 300px !important;
   height: auto;
+  margin: 10px; /* 設定間距 */
 }
 
 .card-img-top {
