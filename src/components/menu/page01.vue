@@ -365,7 +365,7 @@ onBeforeUnmount(() => {
   margin-left: 10px;
 }
 
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
   .menu-product-card-row {
     width: 280px !important;
   }
@@ -405,7 +405,7 @@ onBeforeUnmount(() => {
   .menu-area-btn-row {
     margin: 30px 30px;
   }
-}
+} */
 
 @media (max-width: 1000px) {
   .menu-type-btn-style {
