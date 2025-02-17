@@ -39,6 +39,7 @@ getShoppingList();
 const decreaseQuantity = (item) => {
   if (item.shop_quantity > 1) {
     item.shop_quantity--;
+    console.log(item.shop_quantity);
     orderStore.updateShopQuantity(item.shop_quantity, item.id).then(() => {
       orderStore.getShoppingList(routePathId);
     });
@@ -47,6 +48,7 @@ const decreaseQuantity = (item) => {
 
 const increaseQuantity = (item) => {
   item.shop_quantity++;
+  console.log(item.shop_quantity);
   orderStore.updateShopQuantity(item.shop_quantity, item.id).then(() => {
     orderStore.getShoppingList(routePathId);
   });
