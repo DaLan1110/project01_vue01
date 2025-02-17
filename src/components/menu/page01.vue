@@ -60,7 +60,7 @@ const updateItemsPerRow = () => {
   const width = window.innerWidth;
   if (width < 800) {
     itemsPerRow.value = 2; // 1200px 以下變成 2 個
-  } else if (width < 1000) {
+  } else if (width < 900) {
     itemsPerRow.value = 3; // 1400px 以下變成 3 個
   } else {
     itemsPerRow.value = 4; // 預設 4 個
@@ -407,14 +407,6 @@ onBeforeUnmount(() => {
     height: 300px;
   }
 }
-
-/* @media (max-width: 1100px) {
-  
-
-  
-
-  
-} */
 
 @media (max-width: 1000px) {
   .menu-type-btn-style {
