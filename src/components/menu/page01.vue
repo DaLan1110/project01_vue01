@@ -436,9 +436,9 @@ onBeforeUnmount(() => {
     margin: 30px 20px;
   }
 
-  .menu-product-card-row {
+  /* .menu-product-card-row {
     margin: 2px;
-  }
+  } */
 }
 
 @media (max-width: 900px) {
