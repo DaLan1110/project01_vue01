@@ -58,7 +58,7 @@ const itemsPerRow = ref(4);
 
 const updateItemsPerRow = () => {
   const width = window.innerWidth;
-  if (width < 800) {
+  if (width < 768) {
     itemsPerRow.value = 2; // 1200px 以下變成 2 個
   } else if (width < 900) {
     itemsPerRow.value = 3; // 1400px 以下變成 3 個
