@@ -316,20 +316,20 @@ onBeforeUnmount(() => {
 }
 
 .menu-product-card {
-  width: 25rem;
+  width: 300px !important; /* 確保外框寬度與圖片一致 */
   margin: 10px;
 }
 
 .menu-product-card img {
-  width: 300px !important;
+  width: 100%;
   height: auto; /* 固定圖片高度 */
   object-fit: cover; /* 確保圖片不變形 */
 }
 
 .empty-card {
-  width: 25rem;
+  width: 300px;
   margin: 10px;
-  height: 300px; /* 與正常卡片保持一致 */
+  height: auto; /* 與正常卡片保持一致 */
   background-color: transparent; /* 可以設定為透明或灰色背景 */
 }
 
