@@ -58,15 +58,13 @@ const itemsPerRow = ref(4);
 
 const updateItemsPerRow = () => {
   const width = window.innerWidth;
-  console.log("螢幕寬度:", width);
-  if (width < 1200) {
+  if (width < 800) {
     itemsPerRow.value = 2; // 1200px 以下變成 2 個
-  } else if (width < 1400) {
+  } else if (width < 1000) {
     itemsPerRow.value = 3; // 1400px 以下變成 3 個
   } else {
     itemsPerRow.value = 4; // 預設 4 個
   }
-  console.log("當前 itemsPerRow:", itemsPerRow.value);
 };
 
 // 計算每行的產品數據，確保最後一行補滿
@@ -370,6 +368,23 @@ onBeforeUnmount(() => {
   .card-img-top {
     height: 400px;
   } */
+
+  .menu-product-card {
+    width: 250px !important;
+  }
+
+  .empty-card {
+    width: 300px;
+    margin: 10px;
+    height: auto; /* 與正常卡片保持一致 */
+    background-color: transparent; /* 可以設定為透明或灰色背景 */
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+  }
 }
 
 /*@media (max-width: 1200px) {
