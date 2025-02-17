@@ -266,6 +266,7 @@ onBeforeUnmount(() => {
 .menu-product-card {
   display: flex;
   justify-content: center;
+  margin: 10px; /* 增加間距，避免貼太緊 */
   margin-top: 30px;
 }
 
