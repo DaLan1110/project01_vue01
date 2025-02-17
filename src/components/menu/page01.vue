@@ -334,11 +334,6 @@ onBeforeUnmount(() => {
   margin: 10px;
 }
 
-.menu-product-card img {
-  width: 100%;
-  object-fit: cover; /* 確保圖片不變形 */
-}
-
 .empty-card {
   width: 300px;
   margin: 10px;
@@ -472,7 +467,7 @@ onBeforeUnmount(() => {
     height: auto;
   }
 
-  /* .menu-product-card-row {
+  .menu-product-card-row {
     width: 160px !important;
     margin: 0;
   }
@@ -488,7 +483,7 @@ onBeforeUnmount(() => {
   .menu-prodect-name-font {
     font-size: 18px;
     font-weight: 600;
-  } */
+  }
 }
 
 @media (max-width: 600px) {
@@ -507,13 +502,13 @@ onBeforeUnmount(() => {
     margin: 30px 15px;
   }
 
-  /* .menu-product-card-row {
+  .menu-product-card-row {
     width: 200px !important;
     margin: 10px;
   }
 
   .card-img-top {
     height: 260px;
-  } */
+  }
 }
 </style>
