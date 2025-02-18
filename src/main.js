@@ -10,7 +10,7 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'; // 引入 Bootstrap 的 CSS
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // 引入 Bootstrap 的 JS
 
-import './main.css';
+import '../src/assets/main.css'
 
 import { FontAwesomeIcon } from './assets/awesome/awesome.js'
 
