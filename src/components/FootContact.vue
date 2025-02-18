@@ -80,7 +80,11 @@ watch(
           style="stroke: none; fill: #5b5b5b"
         ></path>
       </svg>
-      <div class="svg-content02">MyWork @ 夏季餐飲有限公司</div>
+      <div class="svg-content02">
+        MyWork @ 夏季餐飲有限公司<br />
+        本專案中的圖片來源於 「 Pinterest 網站
+        」，僅用於開發展示，未作商業用途。
+      </div>
     </div>
   </div>
 </template>
