@@ -19,6 +19,15 @@ const totalPrice = computed(() => {
   return product.value.product_price * productNumber.value;
 });
 
+const validateNumber = () => {
+  // 確保數字在 1 到 99 之間
+  if (productNumber.value < 1) {
+    productNumber.value = 1;
+  } else if (productNumber.value > 99) {
+    productNumber.value = 99;
+  }
+};
+
 const handleProductData = () => {
   sweetnessOptions.value = [];
   iceOptions.value = [];
@@ -267,6 +276,8 @@ const insertProductToShoppingCart = () => {
                   class="form-control"
                   v-model="productNumber"
                   min="1"
+                  max="99"
+                  @input="validateNumber"
                 />
               </div>
               <div class="mt-4 text-start">
