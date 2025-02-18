@@ -1,2 +1,9 @@
-@import './base.css';
-@import 'bootstrap';
+/* @import './base.css';
+@import 'bootstrap'; */
+
+#app {
+    transform: scale(0.9);
+    transform-origin: top center;
+    width: 111.11%; /* 避免縮小影響布局 */
+    overflow-x: hidden; /* 避免出現水平滾動條 */
+  }
