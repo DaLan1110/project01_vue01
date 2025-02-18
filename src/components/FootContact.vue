@@ -81,7 +81,7 @@ watch(
         ></path>
       </svg>
       <div class="svg-content02">
-        MyWork @ 夏季餐飲有限公司<br />
+        <span>MyWork @ 夏季餐飲有限公司</span>
         本專案中的圖片來源於 「 Pinterest 網站
         」，僅用於開發展示，未作商業用途。
       </div>
@@ -130,6 +130,12 @@ watch(
 
   /* 按鈕過小而文字過長，會顯示省略號（...） */
   text-overflow: ellipsis;
+}
+
+.svg-content02 span {
+  display: block;
+  text-align: center; /* 讓第一行置中 */
+  font-weight: bold; /* 可選，加粗字體讓標題更明顯 */
 }
 
 .svg-content01-col1 {
