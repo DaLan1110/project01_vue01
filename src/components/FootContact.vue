@@ -81,9 +81,11 @@ watch(
         ></path>
       </svg>
       <div class="svg-content02">
-        <span>MyWork @ 夏季餐飲有限公司</span>
-        本專案中的圖片來源於 「 Pinterest 網站
-        」，僅用於開發展示，未作商業用途。
+        <span class="svg-content02-text01">MyWork @ 夏季餐飲有限公司</span>
+        <span class="svg-content02-text02"
+          >本專案中的圖片來源於 「 Pinterest 網站
+          」，僅用於開發展示，未作商業用途。</span
+        >
       </div>
     </div>
   </div>
@@ -132,7 +134,7 @@ watch(
   text-overflow: ellipsis;
 }
 
-.svg-content02 span {
+.svg-content02-text01 {
   display: block;
   text-align: center; /* 讓第一行置中 */
   font-weight: bold; /* 可選，加粗字體讓標題更明顯 */
@@ -231,6 +233,9 @@ watch(
   }
   .svg-content01-col8-text {
     font-size: 18px;
+  }
+  .svg-content02-text01 {
+    font-size: 12px;
   }
 }
 
