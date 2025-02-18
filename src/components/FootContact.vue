@@ -234,8 +234,8 @@ watch(
   .svg-content01-col8-text {
     font-size: 18px;
   }
-  .svg-content02-text01 {
-    font-size: 12px;
+  .svg-content02-text02 {
+    font-size: 14px;
   }
 }
 
