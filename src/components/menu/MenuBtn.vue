@@ -266,6 +266,7 @@ const insertProductToShoppingCart = () => {
                   name="product_number"
                   class="form-control"
                   v-model="productNumber"
+                  min="1"
                 />
               </div>
               <div class="mt-4 text-start">
