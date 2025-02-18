@@ -140,6 +140,10 @@ watch(
   font-weight: bold; /* 可選，加粗字體讓標題更明顯 */
 }
 
+.svg-content02-text02 {
+  font-size: 14px;
+}
+
 .svg-content01-col1 {
   font-size: 24px;
 }
@@ -233,9 +237,6 @@ watch(
   }
   .svg-content01-col8-text {
     font-size: 18px;
-  }
-  .svg-content02-text02 {
-    font-size: 14px;
   }
 }
 
